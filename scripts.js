@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var link = document.getElementById('link');
 
     // URL de tu página
-    var pagina = 'https://tupagina.com';
+    var pagina = 'sahansharma.github.io';
 
     // Función para redireccionar al usuario
     function redireccionar() {
