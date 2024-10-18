@@ -1,0 +1,168 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-size: 18px;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(to right, #fff, #aaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1em;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    border-bottom: 2px solid #fff; /* Hover effect for social links */
+}
+
+/* Section Styles */
+.section {
+    margin: 50px 0;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.projects-list li,
+.section ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    list-style-type: none;
+    text-align: center;
+}
+
+.projects-list li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.projects-list li a:hover {
+    color: #ddd;
+}
+
+/* Cool Hover Effect for Project Links */
+.projects-list li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #fff;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.projects-list li a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+/* Footer / Contact Section */
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #333;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    border-bottom: 2px solid #fff;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .projects-list li a {
+        font-size: 1em;
+    }
+}
+
+/* Magic Hover Animation for Profile Picture */
+.profile-pic:hover {
+    animation: magic-spin 1s ease-in-out infinite;
+}
+
+@keyframes magic-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
