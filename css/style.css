@@ -31,7 +31,7 @@ a:active {
 }
 
 a:hover {
-    color: #bbfa46;
+    color: #dff1bd;
     text-shadow: 0 0 5px #fce38a, 0 0 10px #fce38a;
 }
 
@@ -51,5 +51,5 @@ em {
 }
 
 p {
-    color: #9eb5bb;
+    color: #f1dcdc;
 }
