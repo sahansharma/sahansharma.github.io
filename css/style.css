@@ -37,8 +37,8 @@ body {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 4px;
-    border: 4px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 2px;
+    border: 2px solid #ffffff;
 }
 
 h1 {
@@ -68,7 +68,7 @@ h2 {
 }
 
 .contact-links a:hover {
-    color: #ffffff;
+    color: #9bffc58e;
 }
 
 /* Content Section */
@@ -112,13 +112,14 @@ h2 {
 .skills-list a:hover,
 .hobbies-list a:hover,
 .certifications-list a:hover {
-    color: #ffffff; 
+    color: #9bffc58e; 
 }
 
 /* Footer */
 footer {
     text-align: center; 
-    padding: 20px 0; 
+    width: 100%;
+    padding: 2px 0; 
     background-color: rgba(255, 255, 255, 0.05); 
 }
 
