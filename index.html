@@ -6,12 +6,18 @@
     <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/index.js" defer></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
     <table border="0" align="center">
         <tr>
             <td align="center" valign="top" width="180">
-                <img src="https://avatars.githubusercontent.com/u/105370268?v=4" class="profile-photo" alt="Your Photo">
+            <model-viewer src="3d/Adventurer.glb"
+              alt="3D Model"
+              auto-rotate
+              camera-controls
+              style="width: 100%; height: 100px;">
+            </model-viewer>
                 <br><br>
                 <a href="https://www.linkedin.com/in/sahansharma/" target="_blank">Connect on LinkedIn</a><br>
                 <a href="https://github.com/sahansharma" target="_blank">GitHub Page</a><br>
